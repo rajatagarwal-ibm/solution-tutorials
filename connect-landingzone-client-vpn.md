@@ -225,9 +225,11 @@ Make sure you have your development environment configured:
     ```tf
     ibmcloud_api_key              = "<IBM Cloud API key>"
 
+    prefix                        = "<prefix for the new resources>"
+
     /*
     ID, not VPC name.  You can find the information in the Optional inputs
-    section of the console or fom the "ibmcloud is vpcs" CLI command
+    section of the console or from the "ibmcloud is vpcs" CLI command
     */
     vpc_id                         = "<ID>"
 
@@ -294,8 +296,6 @@ Make sure you have your development environment configured:
     The last few lines of the output of the script should look something like the following example:
 
     ```text
-    Apply complete! Resources: 5 added, 2 changed, 0 destroyed.
-
     Outputs:
 
     resource_group_id = "737bb1c6828346a5a961638973cafd31"
